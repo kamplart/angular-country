@@ -14,6 +14,7 @@ No hay paises
       <th>Bandera</th>
       <th>Nombre</th>
       <th>Capital</th>
+      <th>Region</th>
       <th>Poblacion</th>
       <th></th>
     </tr>
@@ -28,8 +29,9 @@ No hay paises
       </td>
       <td>{{country.name.common}}</td>
       <td>{{country.capital}}</td>
+      <td>{{country.region}} ({{country.subregion}})</td>
       <td>{{country.population | number}}</td>
-      <td><a href="#">Ver mas</a></td>
+      <td><a [routerLink]="[ '/countries/by', country.cca3]">Info</a></td>
     </tr>
 
   </tbody>

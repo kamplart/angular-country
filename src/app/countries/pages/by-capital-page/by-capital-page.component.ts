@@ -15,14 +15,8 @@ export class ByCapitalPageComponent {
   constructor( private countriesService: CountriesService ) {}
 
   searchByCapital( term: string ):void  {
-    this.countriesService.searchCapital( term )
+    this.countriesService.searchGeo( term , 'capital')
       .subscribe( countries => {this.countries = countries;} );
-
-
-   // this.countriesService.searchCapital( term )
-    //  .subscribe( countries => {
-    //    this.countries = countries;
-    //  });
 
   }
 
