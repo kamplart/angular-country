@@ -31,7 +31,7 @@ export interface Country {
   car:          Car;
   timezones:    string[];
   continents:   string[];
-  flags:        Flags;
+  flags:        CoatOfArms;
   coatOfArms:   CoatOfArms;
   startOfWeek:  string;
   capitalInfo:  CapitalInfo;
@@ -53,12 +53,12 @@ export interface CoatOfArms {
 }
 
 export interface Currencies {
-  YER?: Clp;
-  DOP?: Clp;
+  USD?: Clp;
   CRC?: Clp;
+  DOP?: Clp;
   EUR?: Clp;
   CLP?: Clp;
-  USD?: Clp;
+  YER?: Clp;
 }
 
 export interface Clp {
@@ -76,22 +76,16 @@ export interface Eng {
   m: string;
 }
 
-export interface Flags {
-  png:  string;
-  svg:  string;
-  alt?: string;
-}
-
 export interface Idd {
   root:     string;
   suffixes: string[];
 }
 
 export interface Languages {
-  ara?: string;
   spa?: string;
   ita?: string;
   eng?: string;
+  ara?: string;
 }
 
 export interface Maps {
@@ -106,10 +100,10 @@ export interface Name {
 }
 
 export interface NativeName {
-  ara?: Translation;
   spa?: Translation;
   ita?: Translation;
   eng?: Translation;
+  ara?: Translation;
 }
 
 export interface Translation {
